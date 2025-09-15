@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    max-width: 375px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #1c4ed8;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.logo-text {
+    color: #1c4ed8;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.penn-text {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.calendar-icon {
+    background-color: #dc2626;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.calendar-icon::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+.calendar-icon::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 15px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.view-cart-section {
+    background-color: #fef2f2;
+    margin: -20px -20px 0 -20px;
+    padding: 0 20px;
+}
+
+.menu-item.credits {
+    background-color: #fef2f2;
+    margin: 0 -20px;
+    padding: 18px 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-item.view-cart {
+    color: #dc2626;
+    border-bottom: none;
+    margin-bottom: 10px;
+    background-color: #fef2f2;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu-item.credits {
+    color: #dc2626;
+    background-color: #fef2f2;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu-item.explore {
+    color: #dc2626;
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+
+.credits-count {
+    color: #374151;
+    font-weight: normal;
+}
+
+.search-section {
+    margin-top: 20px;
+}
+
+.search-label {
+    color: #9ca3af;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #374151;
+}
+
+.searchlogo {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.search-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 15px;
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+.search-button {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.advisor-section {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+}
+
+.advisor-item {
+    margin-bottom: 25px;
+}
+
+.advisor-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.advisor-name {
+    font-size: 16px;
+    color: #374151;
+    margin-bottom: 5px;
+}
+
+.advisor-email {
+    font-size: 14px;
+    color: #374151;
+}
+
+.hamburger {
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #0e0d0d;
+}
+
+.hamburger span:last-child {
+    margin-bottom: 0;
+}
